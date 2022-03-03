@@ -23,7 +23,11 @@ body {
     font-size:1.25rem;text-align:center;
     border-bottom:1px solid #c1c1c1;border-left:1px solid #c1c1c1;
 }
+#menuChicken .menu-item-title {background:rgba(207,152,153,1);}
+#menuBeef .menu-item-title {background:rgba(183,71,70,1);color:#fff;}
+#menuSushi .menu-item-title {background:rgba(226,208,155,1);}
 .menu-item-text {margin-top:40px;}
+footer {position:absolute;bottom:0px;left:0px;font-size:.75rem;}
 
 @media (max-width: 767px) {
     .menu-item {width:100%;}
