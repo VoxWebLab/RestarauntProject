@@ -27,6 +27,7 @@ body {
 #menuBeef .menu-item-title {background:rgba(183,71,70,1);color:#fff;}
 #menuSushi .menu-item-title {background:rgba(226,208,155,1);color:#000;}
 .menu-item-text {margin-top:40px;}
+.menu-item-text p:last-of-type {margin-bottom:0px;}
 footer {position:absolute;bottom:0px;right:0px;font-size:.75rem;}
 
 @media (max-width: 767px) {
