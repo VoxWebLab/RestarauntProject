@@ -4,30 +4,30 @@ html {margin:0px;}
 body {
     margin:0px;
     font-family:Helvetica, Arial, sans-serif;font-weight:400;font-size:18px;
-    background:#f1f1f1;color:#222222;
+    background:#f1f1f1;color:#222;
 }
 
-.menu-wrapper {width:100%;margin:0px;padding:15px 15px;}
-.menu-header {width:100%;text-align:center;}
+.menu-wrapper {width:100%;margin:0px;padding:20px 20px;}
+.menu-header {width:100%;margin:2rem auto;text-align:center;}
 .menu-header h1 {font-size:1.75rem;}
 .menu-body {width:100%;}
 .menu-item {
     position:relative;
     margin-bottom:20px;padding:20px;
-    background:#fff;border:1px solid #c1c1c1;box-shadow:0 10px 20px rgba(0, 0, 0, 0.05);transition:all 0.1s ease-in;
+    background:#fff;border:1px solid #c1c1c1;border-radius:5px;box-shadow:0 10px 20px rgba(0, 0, 0, 0.05);transition:all 0.1s ease-in;
 }
 .menu-item:hover {box-shadow:0 10px 20px rgba(0, 0, 0, 0.1);}
 .menu-item-title {
     position:absolute;top:0px;right:0px;z-index:100;
     width:150px;padding:10px 20px;
-    font-size:1.25rem;text-align:center;
-    border-bottom:1px solid #c1c1c1;border-left:1px solid #c1c1c1;
+    font-size:1.25rem;font-weight:700;text-align:center;
+    border-bottom:1px solid #c1c1c1;border-left:1px solid #c1c1c1;border-radius:0px 0px 0px 5px;
 }
-#menuChicken .menu-item-title {background:rgba(207,152,153,1);}
+#menuChicken .menu-item-title {background:rgba(207,152,153,1);color:#000;}
 #menuBeef .menu-item-title {background:rgba(183,71,70,1);color:#fff;}
-#menuSushi .menu-item-title {background:rgba(226,208,155,1);}
+#menuSushi .menu-item-title {background:rgba(226,208,155,1);color:#000;}
 .menu-item-text {margin-top:40px;}
-footer {position:absolute;bottom:0px;left:0px;font-size:.75rem;}
+footer {position:absolute;bottom:0px;right:0px;font-size:.75rem;}
 
 @media (max-width: 767px) {
     .menu-item {width:100%;}
@@ -38,6 +38,6 @@ footer {position:absolute;bottom:0px;left:0px;font-size:.75rem;}
     .menu-item:last-of-type {width:100%;}
 }
 @media (min-width: 992px) {
-    .menu-item {float:left;width:calc((100% - 40px) / 3);margin-right:20px;}
+    .menu-item {float:left;width:calc((100% - 41px) / 3);margin-right:20px;} /* substract extra px to get compatibility with MS Edge, stupid thing can't divide by 3 correctly */
     .menu-item:last-of-type {margin-right:0px;}
 }
